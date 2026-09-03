@@ -1,7 +1,7 @@
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:test/test.dart';
 
-/// `maat_ptah`'s skeleton ships `ssl` and `pool` alongside the
+/// `ptah`'s skeleton ships `ssl` and `pool` alongside the
 /// pgsql connection basics. `PostgresConnection.open` has no pooling
 /// concept at all, so `pool` was dropped from the skeleton (see
 /// `config/database.dart`); `ssl`, though, is real — it just wasn't being

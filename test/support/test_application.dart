@@ -11,16 +11,16 @@ environment:
   sdk: ^3.12.0
 dependencies:
   maat: ^0.1.0
-  maat_seshat: ^0.1.0
+  seshat_maat: ^0.1.0
 dev_dependencies:
   lints: ^6.1.0
 dependency_overrides:
   maat:
     path: ${p.join(packagesPath, 'maat')}
-  maat_seshat:
+  seshat_maat:
     path: $seshatPath
-  maat_seshat_core:
-    path: ${p.join(packagesPath, 'maat_seshat_core')}
+  seshat:
+    path: ${p.join(packagesPath, 'seshat')}
 ''';
 }
 

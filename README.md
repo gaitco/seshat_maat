@@ -1,19 +1,19 @@
-# Seshat ORM
+# Seshat for Maat
 
 <p align="center"><img src="assets/icon.svg" width="96" alt="Seshat icon"></p>
 
-Wires the [`maat_seshat_core`](https://github.com/gaitco/maat_seshat_core) ORM into the Maat framework.
+Wires the [`seshat`](https://github.com/gaitco/seshat) ORM into the Maat framework.
 
 `maat` (the HTTP framework) depends only on `shelf`, `args` and
 `path` — an API-only application must not be forced to resolve database
 drivers. This package is the glue: it depends on both `maat` and
-`maat_seshat_core` and gives you one provider to register.
+`seshat` and gives you one provider to register.
 
 ## Usage
 
 ```dart
 import 'package:maat/maat.dart';
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 
 final app = await Application.configure(basePath: Directory.current.path)
     .withConfig({
@@ -43,8 +43,8 @@ DatabaseServiceProvider.extend('mysql', (config) async {
 });
 ```
 
-Re-exports `package:maat_seshat_core/maat_seshat_core.dart`,
-`package:maat_seshat_core/sqlite.dart` and `package:maat_seshat_core/postgres.dart`,
+Re-exports `package:seshat/seshat.dart`,
+`package:seshat/sqlite.dart` and `package:seshat/postgres.dart`,
 so `DB`, `Schema`, `Migration`, `SqliteConnection` and `PostgresConnection`
-all resolve from `package:maat_seshat/maat_seshat.dart` — one
+all resolve from `package:seshat_maat/seshat_maat.dart` — one
 import instead of three.

@@ -1,4 +1,4 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
+import 'package:seshat/seshat.dart';
 import 'package:maat/maat.dart';
 
 /// One registered binding: which model a route parameter resolves to, and the

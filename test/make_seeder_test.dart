@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:maat/maat.dart';
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 
@@ -33,7 +33,7 @@ void main() {
     expect(await maat.run(['make:seeder', 'UserSeeder']), 0);
 
     final code = read('database/seeders/user_seeder.dart');
-    expect(code, contains("import 'package:maat_seshat/maat_seshat.dart';"));
+    expect(code, contains("import 'package:seshat_maat/seshat_maat.dart';"));
     expect(code, contains('class UserSeeder extends Seeder'));
     expect(code, contains('Future<void> run() async {}'));
     expect(out.toString(), contains('created successfully'));

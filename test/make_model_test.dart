@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:maat/maat.dart';
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 
@@ -20,7 +20,7 @@ void main() {
       p.join(root.path, 'database', 'migrations'),
     ).createSync(recursive: true);
     File(p.join(root.path, 'database', 'migrations.dart')).writeAsStringSync('''
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 
 final migrations = <Migration>[
 ];
@@ -365,7 +365,7 @@ final migrations = <Migration>[
         p.join(
           frameworkPath,
           '..',
-          'maat_ptah',
+          'ptah',
           'lib',
           'skeleton',
           'analysis_options.yaml',
@@ -432,7 +432,7 @@ final migrations = <Migration>[
     File(p.join(root.path, 'bin', 'check.dart'))
       ..parent.createSync(recursive: true)
       ..writeAsStringSync('''
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:genapp/app/models/post.dart';
 
 import '../database/factories/post_factory.dart';

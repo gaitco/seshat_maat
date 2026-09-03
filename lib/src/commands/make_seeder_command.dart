@@ -17,7 +17,7 @@ class MakeSeederCommand extends GeneratorCommand {
   @override
   String stub(String className) =>
       '''
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 
 class $className extends Seeder {
   @override

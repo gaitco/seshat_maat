@@ -1,9 +1,9 @@
-/// Wires maat_seshat_core into the Maat framework.
+/// Wires seshat into the Maat framework.
 library;
 
-export 'package:maat_seshat_core/maat_seshat_core.dart';
-export 'package:maat_seshat_core/postgres.dart';
-export 'package:maat_seshat_core/sqlite.dart';
+export 'package:seshat/seshat.dart';
+export 'package:seshat/postgres.dart';
+export 'package:seshat/sqlite.dart';
 
 export 'src/commands/database_commands.dart';
 export 'src/commands/db_seed_command.dart';

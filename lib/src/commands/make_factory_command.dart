@@ -54,7 +54,7 @@ class MakeFactoryCommand extends ModelGeneratorCommand {
   @override
   String stub(String className) =>
       '''
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:$_package/${modelPath.substring('lib/'.length)}';
 
 class $className extends Factory<$modelClass> {

@@ -389,7 +389,7 @@ class MakeModelCommand extends GeneratorCommand {
   @override
   String stub(String className) {
     final buffer = StringBuffer()
-      ..writeln("import 'package:maat_seshat/maat_seshat.dart';")
+      ..writeln("import 'package:seshat_maat/seshat_maat.dart';")
       ..writeln()
       ..writeln('class $className extends Model<$className> {')
       ..writeln('  $className({')
@@ -473,7 +473,7 @@ class MakeModelCommand extends GeneratorCommand {
   /// pattern rather than the convenient one.
   String _factoryStub(String packageName) {
     final buffer = StringBuffer()
-      ..writeln("import 'package:maat_seshat/maat_seshat.dart';")
+      ..writeln("import 'package:seshat_maat/seshat_maat.dart';")
       ..writeln("import 'package:$packageName/${_modelPath.substring(4)}';")
       ..writeln()
       ..writeln('class ${_className}Factory extends Factory<$_className> {')
