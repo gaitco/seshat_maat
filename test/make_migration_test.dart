@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:maat/maat.dart';
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 
@@ -20,7 +20,7 @@ void main() {
       p.join(root.path, 'database', 'migrations'),
     ).createSync(recursive: true);
     File(p.join(root.path, 'database', 'migrations.dart')).writeAsStringSync('''
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 
 final migrations = <Migration>[
 ];
@@ -101,7 +101,7 @@ final migrations = <Migration>[
     // reported as "created successfully".
     Future<String> insertInto(String list, String name) async {
       File(p.join(root.path, 'database', 'migrations.dart')).writeAsStringSync(
-        "import 'package:maat_seshat/maat_seshat.dart';\n"
+        "import 'package:seshat_maat/seshat_maat.dart';\n"
         '\n'
         '$list\n',
       );
@@ -201,7 +201,7 @@ final migrations = <Migration>[
       ).readAsStringSync();
       expect(
         registry,
-        contains("import 'package:maat_seshat/maat_seshat.dart';"),
+        contains("import 'package:seshat_maat/seshat_maat.dart';"),
       );
       expect(registry, contains("import 'migrations/"));
       expect(registry, contains('final migrations = <Migration>['));
@@ -250,7 +250,7 @@ final migrations = <Migration>[
         File(
           p.join(root.path, 'database', 'migrations.dart'),
         ).writeAsStringSync('''
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 
 final migrations = <Migration>[
 ];
@@ -529,7 +529,7 @@ final migrations = <Migration>[
           p.join(
             frameworkPath,
             '..',
-            'maat_ptah',
+            'ptah',
             'lib',
             'skeleton',
             'analysis_options.yaml',

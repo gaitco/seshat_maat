@@ -1,4 +1,4 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
+import 'package:seshat/seshat.dart';
 
 import 'faker.dart';
 

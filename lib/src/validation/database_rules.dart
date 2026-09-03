@@ -1,4 +1,4 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
+import 'package:seshat/seshat.dart';
 import 'package:maat/maat.dart';
 
 /// Registers `unique` and `exists` on the validator. Call once at boot — the

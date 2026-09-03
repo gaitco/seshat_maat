@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:maat/maat.dart';
 import 'package:maat/testing.dart';
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:test/test.dart';
 
 void main() {

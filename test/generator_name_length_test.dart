@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:maat/maat.dart';
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 
@@ -58,7 +58,7 @@ void main() {
         p.join(
           framework,
           '..',
-          'maat_ptah',
+          'ptah',
           'lib',
           'skeleton',
           'analysis_options.yaml',

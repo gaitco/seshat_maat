@@ -1,6 +1,6 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
-import 'package:maat_seshat_core/postgres.dart';
-import 'package:maat_seshat_core/sqlite.dart';
+import 'package:seshat/seshat.dart';
+import 'package:seshat/postgres.dart';
+import 'package:seshat/sqlite.dart';
 import 'package:maat/maat.dart';
 
 import 'routing/model_binding.dart';

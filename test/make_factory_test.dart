@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:maat/maat.dart';
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 
@@ -58,7 +58,7 @@ void main() {
       ),
     );
     expect(code, contains('Map<String, Object?> definition(Faker faker)'));
-    expect(code, contains("import 'package:maat_seshat/maat_seshat.dart';"));
+    expect(code, contains("import 'package:seshat_maat/seshat_maat.dart';"));
   });
 
   test('imports the model through the application package', () async {
@@ -274,7 +274,7 @@ void main() {
         p.join(
           frameworkPath,
           '..',
-          'maat_ptah',
+          'ptah',
           'lib',
           'skeleton',
           'analysis_options.yaml',
@@ -320,7 +320,7 @@ void main() {
     File(p.join(root.path, 'bin', 'check.dart'))
       ..parent.createSync(recursive: true)
       ..writeAsStringSync('''
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:genapp/app/models/post.dart';
 
 import '../database/factories/post_factory.dart';

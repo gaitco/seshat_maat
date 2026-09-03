@@ -1,4 +1,4 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
+import 'package:seshat/seshat.dart';
 import 'package:maat/maat.dart';
 
 /// Page size from `?per_page=`, clamped to [max].
@@ -20,7 +20,7 @@ int resolvePage(Request request) {
 
 extension RequestPagination<T> on QueryBuilder<T> {
   /// `paginateRequest(request)` — reads `?page=` and `?per_page=` and delegates
-  /// to maat_seshat_core's `paginate({page, perPage})`.
+  /// to seshat's `paginate({page, perPage})`.
   ///
   /// An explicit [perPage] overrides `?per_page=` entirely AND bypasses the
   /// cap in [resolvePerPage]. That is deliberate: the cap defends against a

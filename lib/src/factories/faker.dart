@@ -1,7 +1,7 @@
 import 'dart:math';
 
 /// Minimal, seedable generators for factories. Deliberately NOT the `faker`
-/// package: a dependency of `maat_seshat` ships into every production
+/// package: a dependency of `seshat_maat` ships into every production
 /// application, and Dart has no dev-only split for a library's consumers.
 ///
 /// Pass a seed for a reproducible sequence — the same seed replays the same

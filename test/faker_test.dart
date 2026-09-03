@@ -1,4 +1,4 @@
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 import 'package:test/test.dart';
 
 void main() {

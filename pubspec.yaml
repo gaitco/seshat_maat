@@ -1,12 +1,12 @@
-name: maat_seshat
-description: Wires the maat_seshat_core ORM into the Maat framework.
+name: seshat_maat
+description: Wires the Seshat ORM into the Maat framework.
 version: 0.1.0
-repository: https://github.com/gaitco/maat_seshat
+repository: https://github.com/gaitco/seshat_maat
 environment:
   sdk: ^3.12.0
 dependencies:
   maat: ^0.1.0
-  maat_seshat_core: ^0.1.0
+  seshat: ^0.1.0
   # make:model computes the generated resource's relative import of the model.
   path: ^1.9.1
 dev_dependencies:

@@ -18,7 +18,7 @@ class MakeMigrationCommand extends Command with GeneratesFiles {
   final DateTime Function() _clock;
 
   static const _registryHeader =
-      "import 'package:maat_seshat/maat_seshat.dart';\n"
+      "import 'package:seshat_maat/seshat_maat.dart';\n"
       '\n'
       'final migrations = <Migration>[\n'
       '];\n';
@@ -124,7 +124,7 @@ class MakeMigrationCommand extends Command with GeneratesFiles {
   /// The parameter is the transaction-bound [SchemaBuilder] the migrator
   /// injects into `up`/`down` (`Migrator.run()` calls
   /// `m.up(SchemaBuilder(tx, grammar))`). It's named `schema`, matching
-  /// `maat_seshat_core`'s own `Migration.up(SchemaBuilder schema)` signature —
+  /// `seshat`'s own `Migration.up(SchemaBuilder schema)` signature —
   /// not the static `Schema` facade, which binds to `DB.connection` rather
   /// than the migration's own transaction, so using it here would silently
   /// run outside that transaction.
@@ -135,7 +135,7 @@ class MakeMigrationCommand extends Command with GeneratesFiles {
     String? table,
   ) {
     final buffer = StringBuffer()
-      ..writeln("import 'package:maat_seshat/maat_seshat.dart';")
+      ..writeln("import 'package:seshat_maat/seshat_maat.dart';")
       ..writeln()
       ..writeln('class $className extends Migration {')
       ..writeln('  @override')
