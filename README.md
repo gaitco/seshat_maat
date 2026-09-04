@@ -2,9 +2,9 @@
 
 <p align="center"><img src="assets/icon.svg" width="96" alt="Seshat icon"></p>
 
-Wires the [`seshat`](https://github.com/gaitco/seshat) ORM into the Maat framework.
+Wires the [`seshat`](../seshat) ORM into the Maat framework.
 
-`maat` (the HTTP framework) depends only on `shelf`, `args` and
+`packages/maat` (the HTTP framework) depends only on `shelf`, `args` and
 `path` — an API-only application must not be forced to resolve database
 drivers. This package is the glue: it depends on both `maat` and
 `seshat` and gives you one provider to register.
